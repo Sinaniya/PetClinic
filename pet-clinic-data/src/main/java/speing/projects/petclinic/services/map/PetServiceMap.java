@@ -1,0 +1,35 @@
+package speing.projects.petclinic.services.map;
+
+import speing.projects.petclinic.model.Pet;
+import speing.projects.petclinic.services.CrudService;
+
+import java.util.Set;
+
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+
+
+    @Override
+    public Set<Pet> findAll() {
+        return super.findAll();
+    }
+
+    @Override
+    public Pet findById(Long id) {
+        return super.findById(id);
+    }
+
+    @Override
+    public Pet save( Pet object) {
+        return super.save(object.getId(),object);
+    }
+
+    @Override
+    public void deleteById(Long id) {
+        return super.deleteById(id);
+    }
+
+    @Override
+    public void delete(Pet object) {
+        return super.delete(object);
+    }
+}

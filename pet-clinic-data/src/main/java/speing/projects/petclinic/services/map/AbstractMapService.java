@@ -21,4 +21,12 @@ public abstract interface AbstractMapService<T,ID> {
         void delete(T object){
         map.entrySet(entry->entry.getValue().equals(object));
         }
+        void deleteById(ID id){
+        map.remove(id);
+        }
+        void delete (T object){
+        map.entrySet().removeIf(entry->entry.getValue().equals(object));
+
+        }
+
 }

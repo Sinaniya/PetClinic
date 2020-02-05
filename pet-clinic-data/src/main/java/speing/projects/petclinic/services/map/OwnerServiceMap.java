@@ -5,34 +5,31 @@ import speing.projects.petclinic.services.CrudService;
 
 import java.util.Set;
 
-public interface OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner,Long> {
-    @Override
-    default Owner save(Owner object) {
-        return null;
-    }
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner,Long> {
+
 
     @Override
-    default void deleteById(Long aLong) {
-
+    default void deleteById(Long id) {
+        super.deleteById(id);
     }
 
     @Override
     default Set<Owner> findAll() {
-        return null;
+        return super.findAll();
     }
 
     @Override
-    default Owner findById(Long aLong) {
-        return null;
+    default Owner findById(Long id) {
+        return super.findById(id);
     }
 
     @Override
-    default Owner save(Long aLong, Owner object) {
-        return null;
+    default Owner save( Owner object) {
+        return super.save(object.getId(), object);
     }
 
     @Override
     default void delete(Owner object) {
-
+super.delete(object);
     }
 }
