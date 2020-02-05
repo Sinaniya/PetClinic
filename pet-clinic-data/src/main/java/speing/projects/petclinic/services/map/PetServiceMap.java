@@ -25,11 +25,11 @@ public class PetServiceMap extends AbstractMapService<Pet, Long> implements Crud
 
     @Override
     public void deleteById(Long id) {
-        return super.deleteById(id);
+        super.deleteById(id);
     }
 
     @Override
     public void delete(Pet object) {
-        return super.delete(object);
+         super.delete(object);
     }
 }

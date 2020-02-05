@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public abstract interface AbstractMapService<T,ID> {
+public abstract  class AbstractMapService<T,ID> {
     protected Map<ID, T> map=new HashMap<>();
 
     Set<T> findAll(){
@@ -14,19 +14,17 @@ public abstract interface AbstractMapService<T,ID> {
     }
     T findById(ID id){
         return map.get(id);
-        }
-        T save (ID id,T object){
-        map.put(id, object);
-        }
-        void delete(T object){
-        map.entrySet(entry->entry.getValue().equals(object));
-        }
-        void deleteById(ID id){
+    }
+    T save (ID id,T object){
+        return map.put(id, object);
+    }
+
+    void deleteById(ID id){
         map.remove(id);
-        }
-        void delete (T object){
+    }
+    void delete (T object){
         map.entrySet().removeIf(entry->entry.getValue().equals(object));
 
-        }
+    }
 
 }
