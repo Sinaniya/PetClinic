@@ -1,10 +1,11 @@
 package speing.projects.petclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import speing.projects.petclinic.model.Pet;
 import speing.projects.petclinic.services.PetService;
 
 import java.util.Set;
-
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
 

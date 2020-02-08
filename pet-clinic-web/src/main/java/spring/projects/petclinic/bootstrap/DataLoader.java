@@ -12,8 +12,15 @@ import speing.projects.petclinic.services.map.VetServiceMap;
 @Component
 public class DataLoader implements CommandLineRunner {
 
-   private final OwnerService ownerService;
-   private final VetService vetService;
+
+    private final OwnerService ownerService;
+    private final VetService vetService;
+
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
+    }
+
 
     public DataLoader(){
         ownerService=new OwnerServiceMap();
