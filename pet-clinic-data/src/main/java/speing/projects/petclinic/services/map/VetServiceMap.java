@@ -1,11 +1,11 @@
 package speing.projects.petclinic.services.map;
 
 import speing.projects.petclinic.model.Vet;
-import speing.projects.petclinic.services.CrudService;
+import speing.projects.petclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Vet save(Vet object) {
         return super.save(object.getId(),object);
