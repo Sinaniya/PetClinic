@@ -1,4 +1,4 @@
-package speing.projects.petclinic.model;
+package spring.projects.petclinic.model;
 
 public class PetType extends BaseEntity {
 

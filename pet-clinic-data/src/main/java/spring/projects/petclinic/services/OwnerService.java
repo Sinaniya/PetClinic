@@ -1,6 +1,6 @@
-package speing.projects.petclinic.services;
+package spring.projects.petclinic.services;
 
-import speing.projects.petclinic.model.Owner;
+import spring.projects.petclinic.model.Owner;
 
 public interface OwnerService extends CrudService<Owner,Long> {
     Owner findByLastName(String lastName);

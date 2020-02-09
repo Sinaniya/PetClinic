@@ -1,8 +1,8 @@
-package speing.projects.petclinic.services.map;
+package spring.projects.petclinic.services.map;
 
 import org.springframework.stereotype.Service;
-import speing.projects.petclinic.model.Vet;
-import speing.projects.petclinic.services.VetService;
+import spring.projects.petclinic.model.Vet;
+import spring.projects.petclinic.services.VetService;
 
 import java.util.Set;
 @Service

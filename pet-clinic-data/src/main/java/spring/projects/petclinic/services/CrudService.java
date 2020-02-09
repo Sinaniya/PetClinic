@@ -1,4 +1,4 @@
-package speing.projects.petclinic.services;
+package spring.projects.petclinic.services;
 
 import java.util.Set;
 

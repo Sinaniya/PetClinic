@@ -2,12 +2,12 @@ package spring.projects.petclinic.bootstrap;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import speing.projects.petclinic.model.Owner;
-import speing.projects.petclinic.model.Vet;
-import speing.projects.petclinic.services.OwnerService;
-import speing.projects.petclinic.services.VetService;
-import speing.projects.petclinic.services.map.OwnerServiceMap;
-import speing.projects.petclinic.services.map.VetServiceMap;
+import spring.projects.petclinic.model.Owner;
+import spring.projects.petclinic.model.Vet;
+import spring.projects.petclinic.services.OwnerService;
+import spring.projects.petclinic.services.VetService;
+import spring.projects.petclinic.services.map.OwnerServiceMap;
+import spring.projects.petclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {

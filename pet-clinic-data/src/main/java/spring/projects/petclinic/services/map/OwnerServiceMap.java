@@ -1,13 +1,15 @@
-package speing.projects.petclinic.services.map;
+package spring.projects.petclinic.services.map;
 
+//import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
-import speing.projects.petclinic.model.Owner;
-import speing.projects.petclinic.services.OwnerService;
+import spring.projects.petclinic.model.Owner;
+import spring.projects.petclinic.services.OwnerService;
 
 import java.util.Set;
 
 @Service
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
+//@Profile({"default", "map"})
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
